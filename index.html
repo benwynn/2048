@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>2048-5</title>
@@ -15,8 +15,19 @@
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="format-detection" content="telephone=no" />
+
+  <meta property="og:title" content="2048"/>
+  <meta property="og:site_name" content="2048"/>
+  <meta property="og:description" content="Join the numbers and get to the 2048 tile! Careful: this game is extremely addictive!"/>
 </head>
 <body>
+
+  <div class="cookie-notice">
+    <p>2048 uses cookies to <a href="./privacy.html">Learn More</a></p>
+    <a class="cookie-notice-dismiss-button">Got it</a>
+  </div>
+  
   <div class="container">
     <div class="heading">
       <h1 class="title">2048</h1>
@@ -37,6 +48,7 @@
         <div class="lower">
 	        <a class="keep-playing-button">Keep going</a>
           <a class="retry-button">Try again</a>
+          <div class="score-sharing"></div>
         </div>
       </div>
 
@@ -94,6 +106,9 @@
     <p>
     Original created by <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli.</a>
     </p>
+    <footer class="links">
+      <a href="./privacy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+    </footer>
   </div>
 
   <script src="js/bind_polyfill.js"></script>
