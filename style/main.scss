@@ -1,11 +1,11 @@
 @import "helpers";
 @import "fonts/clear-sans.css";
 
-$field-width: 500px;
-$grid-spacing: 15px;
-$grid-row-cells: 4;
+$field-width: 600px;
+$grid-spacing: 20px;
+$grid-row-cells: 5;
 $tile-size: ($field-width - $grid-spacing * ($grid-row-cells + 1)) / $grid-row-cells;
-$tile-border-radius: 3px;
+$tile-border-radius: 5px;
 
 $mobile-threshold: $field-width + 20px;
 
@@ -161,7 +161,7 @@ h1.title {
 }
 
 .best-container:after {
-  content: "Best"
+  content: "Best";
 }
 
 p {
@@ -205,16 +205,16 @@ hr {
   }
 }
 
-@include keyframes(slide-up) {
-  0% {
-    margin-top: 32%;
-    // margin-top: 222px;
-  }
-
-  100% {
-    margin-top: 20%;
-    // margin-top: 150px;
-  }
+// Styles for buttons
+@mixin button {
+  display: inline-block;
+  background: darken($game-container-background, 20%);
+  border-radius: 5px;
+  padding: 0 20px;
+  text-decoration: none;
+  color: $bright-text-color;
+  height: 40px;
+  line-height: 42px;
 }
 
 // Game field mixin used to render CSS at different width
